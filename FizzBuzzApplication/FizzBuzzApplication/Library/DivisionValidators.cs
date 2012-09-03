@@ -30,6 +30,7 @@ namespace FizzBuzzApplication.Library
                     if(numberDivisorValidation.Key.Validate(fbNumber))
                     {
                         numberLabel = numberDivisorValidation.Value;
+                        break;
                     }
 
                 }

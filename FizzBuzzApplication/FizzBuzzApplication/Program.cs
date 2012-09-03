@@ -1,4 +1,6 @@
 ﻿using System;
+using FizzBuzzApplication.Library;
+using FizzBuzzApplication.Output;
 
 namespace FizzBuzzApplication
 {
@@ -11,15 +13,28 @@ namespace FizzBuzzApplication
 
         public static void TestRun()
         {
-            for(int i = 0 ; i<2000 ; i++)
+            Logger logger = new Logger();
+            for(int i = 1 ; i<1000 ; i++)
             {
-                Console.WriteLine(i);
-                
+                string numToWrite = PrepareFBValue(i);
+                Console.WriteLine(numToWrite);
+                logger.CreateFizzBuzzLogger(numToWrite);
             }
 
             Console.WriteLine("Press Return Key...");
             Console.Read(); 
 
+        }
+
+        public static string PrepareFBValue(int num)
+        {
+            var rangeValid = new RangeValidator();
+            var fbNumber = new FBNumber();
+            fbNumber.chkFBNumber = num;
+
+            string returnValue = rangeValid.DetermineNumberLabel(fbNumber);
+
+            return returnValue;
         }
     }
 }

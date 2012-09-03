@@ -33,6 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FizzBuzzApplication, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\FizzBuzzApplication\bin\Debug\FizzBuzzApplication.exe</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\..\..\..\..\..\..\dev\13.01.08\code\Library\nunit.framework.dll</HintPath>
     </Reference>
@@ -49,12 +54,6 @@
   <ItemGroup>
     <Compile Include="DivisionValidatorsTestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FizzBuzzApplication\FizzBuzzApplication.csproj">
-      <Project>{B375C34D-52C4-491A-9170-85C025B9F6B4}</Project>
-      <Name>FizzBuzzApplication</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

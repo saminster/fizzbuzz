@@ -8,7 +8,7 @@ namespace FizzBuzzApplication.Library
 
         public string DetermineNumberLabel(FBNumber fbNumber)
         {
-            if(fbNumber.chkFBNumber > 1 && fbNumber.chkFBNumber < 101)
+            if(fbNumber.chkFBNumber >= 1 && fbNumber.chkFBNumber < 101)
             {
                 instance = returnBasicRangeLabel(fbNumber.chkFBNumber);
             }

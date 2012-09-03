@@ -1,7 +1,7 @@
 ﻿using FizzBuzzApplication.Library;
 using NUnit.Framework;
 
-namespace Fizzbuzz.Tests
+namespace FizzBuzzApplication
 {
     [TestFixture]
     public class DivisionValidatorsTests
